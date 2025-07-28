@@ -101,7 +101,7 @@ body {
     text-transform: capitalize;
     text-align: left;
 
-    transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
     position: relative;
 }
 
@@ -113,7 +113,7 @@ body {
     color: var(--hover-color);
 }
 .faq-question button i {
-    transition: all 0.3s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .faq-question.active button i {
