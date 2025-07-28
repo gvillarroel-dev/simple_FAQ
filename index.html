@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CSS FAQ | DevChallenge</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
+</head>
+<body>
+    <main class="main">
+        <section class="faq">
+            <div class="headings">
+                <h2 class="section-heading">Frequently Asked Questions About CSS</h2>
+                <p class="sub-heading">Browse through the most frequently asked questions.</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-question">
+                    <button>
+                        <span>1. What is CSS and why do I need it?</span>
+                        <i class="fi fi-br-angle-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>CSS stands for Cascading Style Sheets. It's a language that tells your web browser how to make your website look good. While HTML creates the basic structure of your page, CSS adds colors, fonts, spacing, and layout. Without CSS, all websites would look plain and boring - just black text on a white background.</p>
+                    </div>
+                </div>
+                <div class="faq-question">
+                    <button>
+                        <span>2. How do I add CSS to my HTML page?</span>
+                        <i class="fi fi-br-angle-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>There are three ways to add CSS to your HTML:</p>
+                        <ul>
+                            <li><strong>Internal CSS:</strong> Put your CSS code inside <code>&lt;style&gt;</code> tags in the <code>&lt;head&gt;</code> section of your HTML file.</li>
+                            <li><strong>External CSS:</strong> Create a separate <code>.css</code> file and link it to your HTML using <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code> in the <code>&lt;head&gt;</code> section.</li>
+                            <li><strong>Inline CSS:</strong> Add CSS directly to HTML elements using the style attribute, like <code>&lt;p style="color: red;"&gt;</code>.</li>
+                        </ul>
+                        <p>The best practice is to use external CSS files because they keep your code organized and can be used across multiple pages.</p>
+                    </div>
+                </div>
+                <div class="faq-question">
+                    <button>
+                        <span>3. What's the difference between class and ID in CSS?</span>
+                        <i class="fi fi-br-angle-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A <strong>class</strong> can be used on multiple elements and starts with a dot (.) in CSS. For example: <code>.my-class { color: blue; }</code></p>
+                        <p>An <strong>ID</strong> should only be used once per page and starts with a hash (#) in CSS. For example: <code>#my-id { color: red; }</code></p>
+                        <p>Think of classes like a group of students wearing the same uniform, while an ID is like one person's unique student number.</p>
+                    </div>
+                </div>
+                <div class="faq-question">
+                    <button>
+                        <span>4. How do I center a div or element?</span>
+                        <i class="fi fi-br-angle-down"></i>
+                    </button>
+                   <div class="faq-answer">
+                    <p>There are several ways to center elements:</p> 
+                    <ul>
+                        <li><strong>For text:</strong> Use <code>text-align: center;</code></li>
+                        <li><strong>For block elements (like divs):</strong> Use <code>margin: 0 auto;</code> and make sure the element has a specific width.</li>
+                        <li><strong>Using Flexbox:</strong> Put <code>display: flex; justify-content: center; align-items: center;</code> on the parent container.</li>
+                        <li><strong>Using Grid:</strong> Put <code>display: grid; place-items: center;</code> on the parent container.</li>
+                    </ul>
+                    <p>Flexbox and Grid are modern methods that work well for most centering needs.</p>
+                   </div>
+                </div>
+                <div class="faq-question">
+                    <button>
+                        <span>5. Why isn't my CSS working?</span>
+                        <i class="fi fi-br-angle-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Here are the most common reasons CSS doesn't work:</p>
+                        <ul>
+                            <li><strong>Spelling mistakes:</strong> Check that you spelled property names and values correctly</li>
+                            <li><strong>Missing semicolons: </strong> Each CSS rule should end with a semicolon (;)</li>
+                            <li><strong>Wrong file path:</strong> Make sure your HTML file can find your CSS file</li>
+                            <li><strong>Specificity issues:</strong> Another CSS rule might be overriding yours</li>
+                            <li><strong>Cached files:</strong> Try refreshing your browser or clearing the cache</li>
+                        </ul>
+                        <p>Use your browser's developer tools (press F12) to check for errors and see which CSS rules are being applied.</p>
+                    </div>
+                </div>
+                <div class="faq-question">
+                    <button>
+                        <span>6. What's the box model in CSS?</span>
+                        <i class="fi fi-br-angle-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The box model describes how CSS calculates the total size of an element. Every element is like a box with four parts:</p>
+                        <ol>
+                            <li><strong>Content:</strong> The actual text or image inside</li>
+                            <li><strong>Padding:</strong> Space between the content and the border</li>
+                            <li><strong>Border:</strong> A line around the padding (can be invisible)</li>
+                            <li><strong>Margin:</strong> Space outside the border, separating it from other elements</li>
+                        </ol>
+                        <p>The total width = content width + padding + border + margin. Understanding this helps you control spacing and layout better.</p>
+                    </div>
+                </div>
+                <div class="faq-question">
+                    <button>
+                        <span>7. How do I make my website look good on phones and tablets?</span>
+                        <i class="fi fi-br-angle-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>This is called "responsive design." Here are the key steps:</p>
+                        <ul>
+                            <li><strong>Add a viewport meta tag </strong>to your HTML head: <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code></li>
+                            <li><strong>Use flexible units</strong> like percentages (%) or viewport units (vw, vh) instead of fixed pixels for widths.</li>
+                            <li><strong>Use media queries</strong> to apply different CSS rules for different screen sizes:</li>
+                            <li><strong>Test on different devices</strong> or use your browser's developer tools to simulate mobile screens.</li>
+                        </ul>
+                        <p>Modern CSS tools like Flexbox and Grid also make responsive design much easier.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Coded by <a href="https://github.com/gvillarroel-dev">Villarroel Giuliana</a></p>
+    </footer>
+
+    <script src="./assets/app.js"></script>
+</body>
+</html>
